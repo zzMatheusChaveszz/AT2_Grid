@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(220, 238, 255);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #728799;
+    height: 10vh;
+    text-align: center;
+    padding: 1%;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 33px;
+    text-align: center;
+    padding: 3vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #9eb1c2;
+  padding: 10px;
+}
+.mais-populoso {
+  background-color: rgba(221, 232, 248, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pais-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.pais-2 {
+  grid-row: span 2;
+}
+
+.pais-3 {
+  grid-area: span / span / span / span;
+}
+
+.pais-4 {
+ justify-self: center; 
+}
+
+.pais-5 {
+ align-self: center; 
+}
+
+.pais-6 {
+ place-self: center; 
+}
+
+footer{
+    background-color: #728799;
+    color: #e0e9f0;
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
